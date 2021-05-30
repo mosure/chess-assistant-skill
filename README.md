@@ -3,16 +3,6 @@ webex assistant chess skill
 
 ![Image of Chess](docs/start.png)
 
-## Backend
-### Assistant Skill
-The backend NLP is powered by [mindmeld](https://www.mindmeld.com/).
-
-### Chess Service
-Abstraction around chess logic. Dialogue handlers expect methods defined in `chess.py` to be implemented.
-
-## Frontend
-Frontend code runs on the edge device to display the game state.
-
 ## Flows
 In these flows, `UI-SDK` is assistant edge client code.
 ### Normal Flow
