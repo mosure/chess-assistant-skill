@@ -10,7 +10,7 @@ webex assistant chess skill
 ![Image of Chess](docs/start.png)
 
 ## Flows
-In these flows, `UI-SDK` is assistant edge client code.
+In these flows, `UI-SDK` is the client.
 ### Normal Flow
 ![Normal Flow](docs/flows-Normal%20Flow.svg)
 
