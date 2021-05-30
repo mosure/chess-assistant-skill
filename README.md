@@ -6,7 +6,16 @@ webex assistant chess skill
 
 ## Flows
 ### Normal Flow
-![Normal Flow](docs/flows-Normal Flow.svg)
+![Normal Flow](docs/flows-Normal%20Flow.svg)
 
 ### Command Flow
-![Command Flow](docs/flows-Command Flow.svg)
+![Command Flow](docs/flows-Command%20Flow.svg)
+
+## TODO
+
+### PVP Games
+Requires websocket to frontend to receive async player moves (or similar).
+
+### Skill session timeout
+
+When the assistant goes off the screen, the current session/`dialogue_id` is lost. The skill service needs to automatically resume sessions (based on `user_id` if available) or the assistant needs to keep `dialogue_id` while a web view is visible.
