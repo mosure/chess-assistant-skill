@@ -1,3 +1,3 @@
-from .chess import ChessService
+from .chess import ChessGame, ChessService
 
-__all__ = ['ChessService']
+__all__ = ['ChessGame', 'ChessService']
