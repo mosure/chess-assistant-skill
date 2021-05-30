@@ -14,7 +14,7 @@ webex assistant chess skill
 ## TODO
 
 ### PVP Games
-Requires websocket to frontend to receive async player moves (or similar).
+Requires websocket skill <-> frontend to receive async player moves (or similar).
 
 ### Skill session timeout
 
