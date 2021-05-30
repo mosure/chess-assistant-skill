@@ -1,4 +1,10 @@
 # assistant-skill-chess
+
+[![GitHub License](https://img.shields.io/github/license/mosure/assistant-skill-chess)](https://raw.githubusercontent.com/mosure/assistant-skill-chess/main/LICENSE)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/mosure/assistant-skill-chess)](https://github.com/mosure/assistant-skill-chess)
+[![GitHub Issues](https://img.shields.io/github/issues/mosure/assistant-skill-chess)](https://github.com/mosure/assistant-skill-chess/issues)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/mosure/assistant-skill-chess.svg)](http://isitmaintained.com/project/mosure/assistant-skill-chess "Average time to resolve an issue")
+
 webex assistant chess skill
 
 ![Image of Chess](docs/start.png)
