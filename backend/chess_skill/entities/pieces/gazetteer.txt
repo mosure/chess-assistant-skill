@@ -1,0 +1,8 @@
+1.0	pawn
+1.0	rook
+1.0 castle
+1.0	bishop
+1.0	knight
+1.0	horse
+1.0	queen
+1.0	king
