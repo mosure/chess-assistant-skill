@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+    background-color: #3A3B3C;
+}
+
+.board {
+    width: min(80vh, 80vw);
+    height: min(80vh, 80vw);
+}
+
+.bounds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.lichess-logo {
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
