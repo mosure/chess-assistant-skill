@@ -20,3 +20,6 @@ Requires websocket skill <-> frontend to receive async player moves (or similar)
 ### Skill session timeout
 
 When the assistant goes off the screen, the current session/`dialogue_id` is lost. The skill service needs to automatically resume sessions (based on `user_id` if available) or the assistant needs to keep `dialogue_id` while a web view is visible.
+
+### Create a better frontend communication library
+Create a library around passing data into skill UI's.

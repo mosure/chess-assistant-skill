@@ -1,0 +1,14 @@
+{knight|piece} takes {rook|piece}
+{knight|piece} to {rook|piece}
+{knight|piece} captures {rook|piece}
+move {knight|piece} to capture {rook|piece}
+
+{pawn|piece} to {e4|location}
+{pawn|piece} goes to {e4|location}
+move my {pawn|piece} to {e4|location}
+move the {pawn|piece} to {e4|location}
+
+{e2|location} to {e4|location}
+{e2|location} goes to {e4|location}
+move {e2|location} to {e4|location}
+{e2|location} captures {e4|location}

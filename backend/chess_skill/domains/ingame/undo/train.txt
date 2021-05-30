@@ -1,0 +1,7 @@
+undo
+undo my last move
+go back
+revert the last move
+revert
+undo the move
+cancel the last move

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 INTENT_CLASSIFIER_CONFIG = {
     'model_type': 'text',
     'model_settings': {

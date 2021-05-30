@@ -2,18 +2,21 @@
 
 class ChessGame:
     def __init__(self):
-        self.id = None  # TODO: populate the ID with lichess ID
+        self.id = None
 
     def is_move_valid(self, algebraic_notation):
-        pass
+        return False
 
     def move(self, algebraic_notation):
         pass
 
     def is_undo_valid(self):
-        pass
+        return False
 
     def undo(self):
+        pass
+
+    def forfeit(self):
         pass
 
 
@@ -22,4 +25,4 @@ class ChessService:
         return None
 
     def get_game(game_id) -> ChessGame:
-        return None
+        return ChessGame()
