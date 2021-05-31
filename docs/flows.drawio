@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-31T00:45:05.438Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="ujKsdJ4940Ck0FGQZnJZ" version="14.7.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-05-31T15:36:50.932Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="KfB0bXDZNMKJDPRUU5bQ" version="14.7.3" type="github" pages="2">
   <diagram name="Normal Flow" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="2062" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -43,7 +43,7 @@
         <mxCell id="CPrPtbFvn0tSy1YDr1JJ-48" value="show board" style="" parent="3" vertex="1">
           <mxGeometry x="75.5" y="290" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="jsRCxzgdSivn5KOcgkmw-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="3" source="CPrPtbFvn0tSy1YDr1JJ-58" target="ZuktWGrSD-A5sFwONZeB-38">
+        <mxCell id="jsRCxzgdSivn5KOcgkmw-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="3" source="CPrPtbFvn0tSy1YDr1JJ-58" target="ZuktWGrSD-A5sFwONZeB-38" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="130.5" y="580" as="targetPoint" />
           </mxGeometry>
@@ -51,13 +51,13 @@
         <mxCell id="CPrPtbFvn0tSy1YDr1JJ-58" value="move at lichess.org&#xa;&amp;&#xa;update board" style="" parent="3" vertex="1">
           <mxGeometry x="75.5" y="480" width="110" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="jsRCxzgdSivn5KOcgkmw-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="3" source="10" target="CPrPtbFvn0tSy1YDr1JJ-48">
+        <mxCell id="jsRCxzgdSivn5KOcgkmw-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="3" source="10" target="CPrPtbFvn0tSy1YDr1JJ-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="10" value="create lichess.org&#xa;game" style="" parent="3" vertex="1">
           <mxGeometry x="75.5" y="210" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="ZuktWGrSD-A5sFwONZeB-38" value="move at lichess.org" style="" vertex="1" parent="3">
+        <mxCell id="ZuktWGrSD-A5sFwONZeB-38" value="move at lichess.org" style="" parent="3" vertex="1">
           <mxGeometry x="75.5" y="590" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="4" value="Skill" style="swimlane;whiteSpace=wrap;startSize=23;" parent="1" vertex="1">
@@ -69,8 +69,8 @@
         <mxCell id="CPrPtbFvn0tSy1YDr1JJ-54" value="move" style="" parent="4" vertex="1">
           <mxGeometry x="85" y="394.5" width="110" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="JZrUL_FMHMiF4FEae43u-39" value="game state update" style="" vertex="1" parent="4">
-          <mxGeometry x="85" y="590" width="110" height="50" as="geometry" />
+        <mxCell id="JZrUL_FMHMiF4FEae43u-39" value="store game_id" style="" parent="4" vertex="1">
+          <mxGeometry x="90" y="210" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="CPrPtbFvn0tSy1YDr1JJ-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;strokeColor=#000000;" parent="1" source="7" target="8" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -88,20 +88,20 @@
             <mxPoint x="280" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jsRCxzgdSivn5KOcgkmw-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CPrPtbFvn0tSy1YDr1JJ-46" target="10">
+        <mxCell id="jsRCxzgdSivn5KOcgkmw-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="CPrPtbFvn0tSy1YDr1JJ-46" target="10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JZrUL_FMHMiF4FEae43u-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CPrPtbFvn0tSy1YDr1JJ-56" target="CPrPtbFvn0tSy1YDr1JJ-58">
+        <mxCell id="JZrUL_FMHMiF4FEae43u-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="CPrPtbFvn0tSy1YDr1JJ-56" target="CPrPtbFvn0tSy1YDr1JJ-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZuktWGrSD-A5sFwONZeB-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZuktWGrSD-A5sFwONZeB-38" target="JZrUL_FMHMiF4FEae43u-39">
+        <mxCell id="mdtZy02pB5mABegPgmKu-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="10" target="JZrUL_FMHMiF4FEae43u-39">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="-tsV6Opg8atozjW8WKVO" name="Command Flow">
-    <mxGraphModel dx="2062" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="782" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="fc2znDHiMACiQNrX73CC-0" />
         <mxCell id="fc2znDHiMACiQNrX73CC-1" parent="fc2znDHiMACiQNrX73CC-0" />
@@ -147,20 +147,14 @@
         <mxCell id="hRVKHVCYQiI2dMDC2-Gg-10" value="show board" style="" parent="hRVKHVCYQiI2dMDC2-Gg-9" vertex="1">
           <mxGeometry x="75.5" y="280" width="114.5" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="CoEjrLCPpEHdtT6WjVxn-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="hRVKHVCYQiI2dMDC2-Gg-9" source="I5mMNuPCCnHlS7OTnyWm-0" target="CoEjrLCPpEHdtT6WjVxn-3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="I5mMNuPCCnHlS7OTnyWm-0" value="lichess.org update&#xa;&amp;&#xa;update board" style="" parent="hRVKHVCYQiI2dMDC2-Gg-9" vertex="1">
           <mxGeometry x="75.5" y="405" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CoEjrLCPpEHdtT6WjVxn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="hRVKHVCYQiI2dMDC2-Gg-9" source="hRVKHVCYQiI2dMDC2-Gg-17" target="hRVKHVCYQiI2dMDC2-Gg-10">
+        <mxCell id="CoEjrLCPpEHdtT6WjVxn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="hRVKHVCYQiI2dMDC2-Gg-9" source="hRVKHVCYQiI2dMDC2-Gg-17" target="hRVKHVCYQiI2dMDC2-Gg-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hRVKHVCYQiI2dMDC2-Gg-17" value="create lichess.org&#xa;game" style="" parent="hRVKHVCYQiI2dMDC2-Gg-9" vertex="1">
           <mxGeometry x="75.5" y="200" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="CoEjrLCPpEHdtT6WjVxn-3" value="POST to skill&#xa;with move" style="" vertex="1" parent="hRVKHVCYQiI2dMDC2-Gg-9">
-          <mxGeometry x="73.25" y="515" width="114.5" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hRVKHVCYQiI2dMDC2-Gg-14" value="Skill" style="swimlane;whiteSpace=wrap;startSize=23;" parent="fc2znDHiMACiQNrX73CC-1" vertex="1">
           <mxGeometry x="725" y="30" width="280" height="690" as="geometry" />
@@ -168,8 +162,8 @@
         <mxCell id="hRVKHVCYQiI2dMDC2-Gg-16" value="start game" style="" parent="hRVKHVCYQiI2dMDC2-Gg-14" vertex="1">
           <mxGeometry x="90" y="110" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="CoEjrLCPpEHdtT6WjVxn-5" value="game state update" style="" vertex="1" parent="hRVKHVCYQiI2dMDC2-Gg-14">
-          <mxGeometry x="85" y="515" width="110" height="50" as="geometry" />
+        <mxCell id="CoEjrLCPpEHdtT6WjVxn-5" value="store game_id" style="" parent="hRVKHVCYQiI2dMDC2-Gg-14" vertex="1">
+          <mxGeometry x="90" y="200" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hRVKHVCYQiI2dMDC2-Gg-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;strokeColor=#000000;" parent="fc2znDHiMACiQNrX73CC-1" source="hRVKHVCYQiI2dMDC2-Gg-3" target="hRVKHVCYQiI2dMDC2-Gg-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -177,15 +171,15 @@
         <mxCell id="I5mMNuPCCnHlS7OTnyWm-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;strokeColor=#000000;" parent="fc2znDHiMACiQNrX73CC-1" source="hRVKHVCYQiI2dMDC2-Gg-5" target="I5mMNuPCCnHlS7OTnyWm-0" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CoEjrLCPpEHdtT6WjVxn-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="fc2znDHiMACiQNrX73CC-1" source="hRVKHVCYQiI2dMDC2-Gg-16" target="hRVKHVCYQiI2dMDC2-Gg-4">
+        <mxCell id="CoEjrLCPpEHdtT6WjVxn-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="fc2znDHiMACiQNrX73CC-1" source="hRVKHVCYQiI2dMDC2-Gg-16" target="hRVKHVCYQiI2dMDC2-Gg-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CoEjrLCPpEHdtT6WjVxn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="fc2znDHiMACiQNrX73CC-1" source="hRVKHVCYQiI2dMDC2-Gg-4" target="hRVKHVCYQiI2dMDC2-Gg-17">
+        <mxCell id="CoEjrLCPpEHdtT6WjVxn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="fc2znDHiMACiQNrX73CC-1" source="hRVKHVCYQiI2dMDC2-Gg-4" target="hRVKHVCYQiI2dMDC2-Gg-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="520" y="255" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CoEjrLCPpEHdtT6WjVxn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="fc2znDHiMACiQNrX73CC-1" source="CoEjrLCPpEHdtT6WjVxn-3" target="CoEjrLCPpEHdtT6WjVxn-5">
+        <mxCell id="eLdzBkK7XsYCSRaCTDm6-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="fc2znDHiMACiQNrX73CC-1" source="hRVKHVCYQiI2dMDC2-Gg-17" target="CoEjrLCPpEHdtT6WjVxn-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
