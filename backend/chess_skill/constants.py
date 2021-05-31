@@ -1,0 +1,2 @@
+GAME_ID_KEY = 'game_id'
+GAME_ID_LENGTH = 8

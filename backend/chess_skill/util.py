@@ -1,19 +1,21 @@
-from backend.chess_service import ChessGame, ChessService
+from backend.chess_service import ChessGame, get_game
+
+from .constants import GAME_ID_KEY
 
 
-def get_game(request, responder) -> ChessGame:
-    game_id = None  # TODO: get game_id from request context
+def _get_game(request) -> ChessGame:
+    if GAME_ID_KEY not in request.frame:
+        return None
 
-    return ChessService.get_game(game_id)
+    return get_game(request.frame[GAME_ID_KEY])
 
 
 def add_commands(request, responder):
     pass
 
 
-def frontend_update(request, responder, game=None):
+def frontend_update(request, responder, refresh_web_view=True):
     add_commands(request, responder)
 
-    responder.act('display-web-view')
-
-    responder.listen()
+    if refresh_web_view:
+        responder.act('display-web-view')

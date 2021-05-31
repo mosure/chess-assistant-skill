@@ -1,0 +1,7 @@
+{pawn|piece}
+move the {king|piece}
+the {queen|piece}
+select the {rook|piece}
+move my {rook|piece}
+capture the {rook|piece}
+capture their {rook|piece}

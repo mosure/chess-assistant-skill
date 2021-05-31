@@ -1,0 +1,10 @@
+move to {e5|location}
+go to {e5|location}
+{e5|location}
+square {e5|location}
+position {e5|location}
+location {e5|location}
+capture {e5|location}
+to {e5|location}
+the location is {e5|location}
+the position is {e5|location}

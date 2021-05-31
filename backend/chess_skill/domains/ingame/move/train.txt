@@ -1,3 +1,5 @@
+move
+
 {knight|piece} takes {rook|piece}
 {knight|piece} to {rook|piece}
 {knight|piece} captures {rook|piece}
@@ -7,8 +9,28 @@ move {knight|piece} to capture {rook|piece}
 {pawn|piece} goes to {e4|location}
 move my {pawn|piece} to {e4|location}
 move the {pawn|piece} to {e4|location}
+my {knight|piece} to {e4|location}
 
 {e2|location} to {e4|location}
 {e2|location} goes to {e4|location}
 move {e2|location} to {e4|location}
 {e2|location} captures {e4|location}
+
+{e2|location} captures {pawn|piece}
+
+{knight|piece} {a|file} to {e4|location}
+
+{knight|piece} on {a|file} to {pawn|piece}
+{knight|piece} {a|file} to {pawn|piece}
+
+{knight|piece} on {1|rank} to {pawn|piece}
+{knight|piece} {1|rank} to {pawn|piece}
+
+{knight|piece} {a|file} to {pawn|piece} {1|rank}
+
+{knight|piece} {a|file} to {pawn|piece} {a|file}
+
+
+{knight|piece} {a|rank} to {pawn|piece} {1|rank}
+
+{knight|piece} {a|rank} to {pawn|piece} {a|file}

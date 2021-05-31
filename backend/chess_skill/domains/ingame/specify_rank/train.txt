@@ -1,0 +1,9 @@
+{1|rank}
+file {1|rank}
+column {1|rank}
+row {1|rank}
+lane {1|rank}
+
+{queen|piece} {1|rank}
+{queen|piece} at {1|rank}
+{queen|piece} on {1|rank}
