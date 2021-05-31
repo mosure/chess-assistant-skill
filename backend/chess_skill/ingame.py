@@ -1,31 +1,18 @@
 from .root import app
-from .util import _get_game, frontend_update
+from .util import frontend_update
 
 
 @app.handle(intent='castle')
 def castle(request, responder):
-    if not _is_game_active(request, responder):
-        return
-
-    game = _get_game(request, responder)
-
     castle_move = None
 
-    if game.is_move_valid(castle_move):
-        responder.reply('castling...')
-    else:
-        responder.reply('cannot castle...')
+    responder.reply('castling...')
 
     frontend_update(request, responder)
 
 
 @app.handle(intent='forfeit')
 def forfeit(request, responder):
-    if not _is_game_active(request, responder):
-        return
-
-    _get_game(request, responder).forfeit()
-
     responder.reply('forfeiting...')
 
     frontend_update(request, responder)
@@ -33,9 +20,6 @@ def forfeit(request, responder):
 
 @app.handle(intent='move')
 def move(request, responder):
-    if not _is_game_active(request, responder):
-        return
-
     responder.frame['desired_action'] = 'move'
 
     locations = _get_locations(request)
@@ -61,34 +45,16 @@ def move(request, responder):
 
 @app.handle(intent='pawn_promote')
 def pawn_promote(request, responder):
-    if not _is_game_active(request, responder):
-        return
-
-    game = _get_game(request, responder)
-
     pawn_promotion = None
 
-    if game.is_move_valid(pawn_promotion):
-        responder.reply('promoting pawn...')
-    else:
-        responder.reply('cannot promote pawn...')
+    responder.reply('promoting pawn...')
 
     frontend_update(request, responder)
 
 
 @app.handle(intent='undo')
 def undo(request, responder):
-    if not _is_game_active(request, responder):
-        return
-
-    game = _get_game(request, responder)
-
-    if game.is_undo_valid():
-        responder.reply('undoing...')
-    else:
-        responder.reply('cannot undo right now...')
-
-    frontend_update(request, responder)
+    _move(request, responder, 'undo')
 
 
 def _get_locations(request):
@@ -144,33 +110,14 @@ def _get_ranks(request):
     return [e for e in request.entities if e['type'] == 'rank']
 
 
-def _is_game_active(request, responder):
-    game = _get_game(request)
-
-    if game is None:
-        return responder.reply('there is no active game.')
-
-    return True
-
 
 def _move(request, responder, algebraic_notation):
     """
     Handle a dirty move.
     """
 
-    game = _get_game(request)
-
-    (good_from, good_to) = game.is_move_well_defined(move)
-    if not good_from or not good_to:
-        responder.reply('non-specific move.')
-        return False
-
-    if not game.is_move_valid(algebraic_notation=algebraic_notation):
-        responder.reply('move is invalid.')
-        return False
-
-    responder.reply('move is valid.')
-    frontend_update(request, responder)
+    responder.reply(f'move: {algebraic_notation}')
+    frontend_update(request, responder, algebraic_notation)
 
     return True
 

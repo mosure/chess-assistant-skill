@@ -1,9 +1,6 @@
 import random
 import string
 
-from backend.chess_service import ChessGame, get_game
-
-from .constants import GAME_ID_KEY, GAME_ID_LENGTH
 from .root import app
 from .util import frontend_update
 
@@ -21,9 +18,6 @@ def new_game(request, responder):
     """
 
     difficulty = None
-    game_id = None
-
-    game = _new_game(request, responder)
 
     responder.reply('new game...')
 
@@ -43,10 +37,3 @@ def resume_game(request, responder):
     responder.reply('resuming game...')
 
     frontend_update(request, responder)
-
-
-def _new_game(request, responder) -> ChessGame:
-    game_id = ''.join(random.choices(string.ascii_uppercase, k=GAME_ID_LENGTH))
-    responder.frame[GAME_ID_KEY] = game_id
-
-    return get_game(game_id)
