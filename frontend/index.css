@@ -3,6 +3,14 @@ body {
     background-color: #3A3B3C;
 }
 
+.highlight-check {
+    box-shadow: inset 0 0 2px 2px rgba(128, 0, 0);
+}
+
+.highlight-last-move {
+    box-shadow: inset 0 0 2px 2px rgba(11, 128, 0);
+}
+
 .board {
     width: min(80vh, 80vw);
     height: min(80vh, 80vw);
@@ -19,6 +27,6 @@ body {
 .lichess-logo {
     width: 100px;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    top: 0px;
+    left: 0px;
 }

@@ -20,18 +20,15 @@ def forfeit(request, responder):
 
 @app.handle(intent='move')
 def move(request, responder):
-    responder.frame['desired_action'] = 'move'
-
     locations = _get_locations(request)
     pieces = _get_pieces(request)
 
-    successful = False
     if len(locations) == 2:
-        successful = _move_location_to_location(request, responder, from_pos=locations[0], to_pos=locations[1])
+        _move_location_to_location(request, responder, from_pos=locations[0], to_pos=locations[1])
     elif len(pieces) == 2:
-        successful = _move_piece_to_piece(request, responder, from_piece=pieces[0], to_piece=pieces[1])
+        _move_piece_to_piece(request, responder, from_piece=pieces[0], to_piece=pieces[1])
     elif len(pieces) == 1 and len(locations) == 1:
-        successful = _move_piece_and_location(request, responder, piece=pieces[0], location=locations[0])
+        _move_piece_and_location(request, responder, piece=pieces[0], location=locations[0])
     elif len(pieces) == 1 and len(locations) == 0:
         responder.reply('specify a target location.')
     elif len(pieces) == 0 and len(locations) == 1:
@@ -39,8 +36,7 @@ def move(request, responder):
     else:
         responder.reply('specify a piece to move.')
 
-    if not successful:
-        responder.listen()
+    responder.listen()
 
 
 @app.handle(intent='pawn_promote')
@@ -135,6 +131,11 @@ def _move_piece_to_piece(request, responder, from_piece, to_piece):
 
 def _move_piece_and_location(request, responder, piece, location):
     piece_letter = piece['text'].upper()[0]
+
+    if piece['text'].upper() == 'KNIGHT':
+        # K is taken by king
+        piece_letter = 'N'
+
     location_text = location['text'].lower()
 
     files = _get_files(request)

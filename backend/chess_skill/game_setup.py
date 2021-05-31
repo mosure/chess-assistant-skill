@@ -1,6 +1,3 @@
-import random
-import string
-
 from .root import app
 from .util import frontend_update
 
@@ -17,11 +14,12 @@ def new_game(request, responder):
         - Allow PVP games
     """
 
-    difficulty = None
+    difficulty = None  # TODO: add difficulty entity
+    starting_side = None  # TODO: add starting side (black/white)
 
     responder.reply('new game...')
 
-    frontend_update(request, responder)
+    frontend_update(request, responder, command='new', difficulty=difficulty)
 
 
 @app.handle(intent='resume')
@@ -36,4 +34,4 @@ def resume_game(request, responder):
 
     responder.reply('resuming game...')
 
-    frontend_update(request, responder)
+    frontend_update(request, responder, game_id='{OLD GAME_ID}', command='resume')
