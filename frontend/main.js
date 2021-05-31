@@ -110,7 +110,7 @@ function newGame(difficulty = default_game_difficulty) {
         level: difficulty,
         days: 14,
         color: "white",
-        fen: '2k2B1n/2NN3P/1R1p4/p5K1/5P2/4p3/3r1pRp/8 w - - 0 1',
+        //fen: '2k2B1n/2NN3P/1R1p4/p5K1/5P2/4p3/3r1pRp/8 w - - 0 1',
     }, (res) => {
         console.log(res);
 
