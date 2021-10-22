@@ -8,3 +8,6 @@ Run `python -m backend.chess_skill build` to build the models.
 
 ### Converse
 Run `python -m backend.chess_skill converse` to interact with the skill.
+
+### Run Skill
+Run `python -m backend.chess_skill run -P 7171`.

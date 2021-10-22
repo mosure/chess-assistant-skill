@@ -12,8 +12,8 @@ body {
 }
 
 .board {
-    width: min(80vh, 80vw);
-    height: min(80vh, 80vw);
+    width: 400px;
+    height: 400px;
 }
 
 .bounds {
@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
 }
 
 .lichess-logo {

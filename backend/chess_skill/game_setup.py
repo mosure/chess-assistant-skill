@@ -21,6 +21,8 @@ def new_game(request, responder):
 
     frontend_update(request, responder, command='new', difficulty=difficulty)
 
+    responder.listen()
+
 
 @app.handle(intent='resume')
 def resume_game(request, responder):

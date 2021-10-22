@@ -131,18 +131,7 @@ function loadGame() {
 }
 
 function doMove(move) {
-    var move_res = game.move(move, { sloppy: true });
-
-    if (!move_res) {
-        console.log('invalid move');
-        return;
-    }
-    board.position(game.fen());
-    postMoveUpdate(move_res.from, move_res.to);
-
-    console.log(move_res);
-
-    var uci = move_res.from + move_res.to;
+    var uci = frontend_move(move);
     last_move = uci;
 
     api('/board/game/' + current_game_id + '/move/' + uci, 'post', undefined, (res) => {
@@ -167,6 +156,22 @@ function parseHash() {
     return undefined;
 }
 
+function frontendMove(move) {
+    var move_res = game.move(move, { sloppy: true });
+
+    if (!move_res) {
+        console.log('invalid move');
+        return;
+    }
+    board.position(game.fen());
+    postMoveUpdate(move_res.from, move_res.to);
+
+    console.log(move_res);
+
+    var uci = move_res.from + move_res.to;
+    return uci;
+}
+
 function handleCommand(board, payload) {
     if (!payload) {
         return;
@@ -174,9 +179,19 @@ function handleCommand(board, payload) {
 
     console.log(payload);
 
+    if (payload.frontend_mode) {
+        if (payload.move) {
+            frontendMove(payload.move);
+        } else if (payload.fen) {
+            setBoardPosition(payload.fen);
+        }
+
+        return;
+    }
+
     // handle command over move
     if (payload.command) {
-        var difficulty = payload.difficulty ?? default_game_difficulty;
+        var difficulty = payload.difficulty || default_game_difficulty;
 
         if (payload.command === 'new') {
             newGame(difficulty);
