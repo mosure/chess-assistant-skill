@@ -12,8 +12,8 @@ body {
 }
 
 .board {
-    width: 960px;
-    height: 960px;
+    width: 600px;
+    height: 600px;
 }
 
 .bounds {
